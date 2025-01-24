@@ -10,45 +10,45 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: "Truck",
+    title: "No conforto!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Fazemos retidas e entregamos no conforto do seu lar, entregas e retiradas no mesmo dia.",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Reparos Rápidos",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Temos diversos técnicos para cada tipo de reparo, garantindo a rapidez e qualidade do serviço.",
   },
   {
     icon: "Wallet",
-    title: "Higher Conversions",
+    title: "Atendimento 24h",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Uma das poucas empresas que oferece atendimento 24h, para qualquer tipo de emergência.",
   },
   {
-    icon: "Sparkle",
+    icon: "DollarSign",
     title: "Test Marketing Ideas",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Melhor preco da regiao com qualidade acima da media, garantimos o melhor custo beneficio.",
   },
 ];
 
 export const BenefitsSection = () => {
   return (
-    <section id="benefits" className="container py-24 sm:py-32">
+    <section id="benefits" className="container py-10 sm:py-14">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
           <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Mao de Obra 100% Especializada!
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Temos mais de 18 anos de experiência em manutenção de desktops, notebooks, celulares e outros.
+            <br />
+            Ja enfretamos todos tipos de problemas e hoje nossa especiaidade e entregar o melhor serviço para nossos clientes.
           </p>
         </div>
 

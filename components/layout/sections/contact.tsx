@@ -58,7 +58,7 @@ export const ContactSection = () => {
   }
 
   return (
-    <section id="contact" className="container py-24 sm:py-32">
+    <section id="contact" className="container py-10 sm:py-14">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <div className="mb-4">

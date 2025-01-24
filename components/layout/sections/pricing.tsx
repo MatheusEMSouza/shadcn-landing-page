@@ -17,7 +17,7 @@ enum PopularPlan {
 interface PlanProps {
   title: string;
   popular: PopularPlan;
-  price: number;
+  timer: number;
   description: string;
   buttonText: string;
   benefitList: string[];
@@ -25,70 +25,74 @@ interface PlanProps {
 
 const plans: PlanProps[] = [
   {
-    title: "Free",
+    title: "Desktop & All-in-One",
     popular: 0,
-    price: 0,
+    timer: 6,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "Especialistas em manutenção para desktops e computadores All-in-One, oferecendo reparos precisos e rápidos.",
+    buttonText: "Saiba Mais",
     benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
-      "Community support",
-      "AI assistance",
+      "Troca de peças e upgrades",
+      "Limpeza interna e remoção de poeira",
+      "Formatação e reinstalação de sistemas",
+      "Diagnóstico avançado de hardware",
+      "Atualização de drivers e software",
+      "Soluções para travamentos e lentidão",
     ],
   },
   {
-    title: "Premium",
+    title: "Celulares & Tablets",
     popular: 1,
-    price: 45,
+    timer: 4,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get starterd",
+      "Serviço especializado para celulares e tablets, garantindo reparos rápidos e peças originais.",
+    buttonText: "Iniciar Serviço",
     benefitList: [
-      "4 team member",
-      "8 GB storage",
-      "Upto 6 pages",
-      "Priority support",
-      "AI assistance",
+      "Troca de tela e touch",
+      "Substituição de bateria e conectores",
+      "Reparos em câmeras e botões",
+      "Atualização de software",
+      "Remoção de contas Google & AppleID",
+      "Soluções para oxidação",
+      "Reparos avançados em placas",
     ],
   },
   {
-    title: "Enterprise",
+    title: "Notebooks & Ultrabooks",
     popular: 0,
-    price: 120,
+    timer: 5,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Manutenção completa para notebooks e ultrabooks, garantindo alto desempenho e durabilidade.",
+    buttonText: "Entre em Contato",
     benefitList: [
-      "10 team member",
-      "20 GB storage",
-      "Upto 10 pages",
-      "Phone & email support",
-      "AI assistance",
+      "Troca de tela e teclado",
+      "Soluções para aquecimento e travamento",
+      "Upgrades de memória e armazenamento",
+      "Reparos em conectores e dobradiças",
+      "Formatação e recuperação de dados",
+      "Limpeza interna e otimização",
     ],
   },
 ];
 
 export const PricingSection = () => {
   return (
-    <section className="container py-24 sm:py-32">
+    <section className="container py-10 sm:py-14">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Pricing
+        Equipamentos
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Get unlimitted access
+        Nossos equipamentos mais reparados
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
-        Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
+        Alguns detalhes sobre os equipamentos que mais reparamos
       </h3>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
         {plans.map(
-          ({ title, popular, price, description, buttonText, benefitList }) => (
+          ({ title, popular, timer, description, buttonText, benefitList }) => (
             <Card
               key={title}
               className={
@@ -105,8 +109,8 @@ export const PricingSection = () => {
                 </CardDescription>
 
                 <div>
-                  <span className="text-3xl font-bold">${price}</span>
-                  <span className="text-muted-foreground"> /month</span>
+                  <span className="text-3xl font-bold">{timer}h</span>
+                  <span className="text-muted-foreground text-sm"> /Tempo mínimo para reparo.</span>
                 </div>
               </CardHeader>
 

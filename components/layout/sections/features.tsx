@@ -1,6 +1,9 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@/components/ui/icon";
 import { icons } from "lucide-react";
+import { useEffect } from "react";
 
 interface FeaturesProps {
   icon: string;
@@ -10,58 +13,96 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    icon: "LocateFixed",
+    title: "Manutenção Corretiva",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Correções rápidas e eficientes para notebooks, celulares e tablets, incluindo troca de componentes, atualização de software e reparos avançados.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: "Activity",
+    title: "Manutenção Preventiva",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Planos mensais com limpeza, atualizações, checagem de componentes e melhorias para prolongar a vida útil dos dispositivos.",
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
+    icon: "Building2",
+    title: "Serviços Empresariais",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Soluções personalizadas para empresas, com suporte técnico, manutenção em lote, contratos de assistência e consultoria para otimização e segurança.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
+    icon: "Truck",
+    title: "Coleta e Entrega sem Custo",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Não precisa sair de casa ou do trabalho. A gente busca e entrega seus dispositivos sem cobrar nada, garantindo comodidade e economia de tempo.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
+    icon: "FlaskConical",
+    title: "Laboratório Próprio",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Nosso laboratório é equipado com tecnologia moderna, garantindo diagnósticos precisos e reparos rápidos.",
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
+    icon: "Rabbit",
+    title: "Orçamento em 12h",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Aqui não tem surpresa! Você pede um orçamento, a gente explica tudo direitinho e só começa o reparo depois de você aprovar.",
+  },
+  {
+    icon: "CalendarClock",
+    title: "20 Anos de Experiência",
+    description:
+      "São duas décadas de história, acumulando conhecimento e construindo uma relação de confiança com nossos clientes.",
+  },
+  {
+    icon: "Lock",
+    title: "Garantia de ate 12 Meses",
+    description:
+      "Qualquer reparo que a gente fizer tem 1 ano de garantia. Se o problema voltar, consertamos sem custo.",
+  },
+  {
+    icon: "ShieldCheck",
+    title: "Reparo e Entrega em até 7 Dias Úteis",
+    description:
+      "Sabemos que seus dispositivos são importantes. Consertamos e devolvemos rapidinho, confira nossos planos.",
+  },
+  {
+    icon: "BadgeDollarSign",
+    title: "Faturamento Flexível",
+    description:
+      "A gente facilita o pagamento com opções que se adaptam às necessidades de empresas e clientes.",
+  },
+  {
+    icon: "Cable",
+    title: "Logística Reversa",
+    description:
+      "Seus equipamentos antigos ou peças defeituosas? A gente recolhe e recicla, ajudando o meio ambiente.",
+  },
+  {
+    icon: "ShoppingBasket",
+    title: "Atendimento EMPRESAS",
+    description:
+      "Temos experiência com empresas e garantimos soluções ágeis e personalizadas para manter tudo funcionando.",
   },
 ];
 
 export const FeaturesSection = () => {
   return (
-    <section id="features" className="container py-24 sm:py-32">
+    <section
+      id="features"
+      className="container py-10 sm:py-14"
+    >
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Features
+        QUALIDADES
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        Fazemos a diferença!
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        Desde o primeiro contato até a entrega, tudo é feito com cuidado e
+        respeito. Seu dispositivo está em boas mãos.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

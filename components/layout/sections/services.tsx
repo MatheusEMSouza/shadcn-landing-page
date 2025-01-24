@@ -42,7 +42,7 @@ const serviceList: ServiceProps[] = [
 
 export const ServicesSection = () => {
   return (
-    <section id="services" className="container py-24 sm:py-32">
+    <section id="services" className="container py-10 sm:py-14">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
         Services
       </h2>
@@ -51,8 +51,7 @@ export const ServicesSection = () => {
         Grow Your Business
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
+        Veja como podemos ajudar sua empresa com a manutenção de notebooks e celulares
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 

@@ -42,18 +42,32 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+    <div
+      className=""
+      style={{
+        position: "relative", // Ensures the overlay and content align correctly
+        backgroundImage: `url('wallpaper.jpg')`,
+        backgroundSize: "cover", // Make the image cover the entire container
+        backgroundRepeat: "no-repeat", // Prevent repeating
+        backgroundAttachment: "fixed", // Make the background fixed on scroll
+        backgroundPosition: "center", // Center the image
+        backgroundColor: "rgba(255, 255, 255, 0.75)", // Black overlay with 5% transparency
+        backgroundBlendMode: "overlay", // Blend the background color and image
+      }}
+      >
       <HeroSection />
-      <SponsorsSection />
+      {/* <SponsorsSection /> */}
       <BenefitsSection />
       <FeaturesSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <TestimonialSection />
-      <TeamSection />
-      <CommunitySection />
+      {/* <TeamSection /> */}
+      {/* <CommunitySection /> */}
       <PricingSection />
       <ContactSection />
       <FAQSection />
       <FooterSection />
+      </div>
     </>
   );
 }

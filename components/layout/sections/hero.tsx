@@ -10,13 +10,13 @@ export const HeroSection = () => {
   const { theme } = useTheme();
   return (
     <section className="container w-full">
-      <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
+      <div className="grid place-items-center lg:max-w-screen-xl gap-4 mx-auto py-12 md:py-15">
         <div className="text-center space-y-8">
           <Badge variant="outline" className="text-sm py-2">
             <span className="mr-2 text-primary">
-              <Badge>New</Badge>
+              <Badge>Armando</Badge>
             </span>
-            <span> Design is out now! </span>
+            <span> Testando  </span>
           </Badge>
 
           <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
@@ -55,7 +55,7 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        <div className="relative group mt-14">
+        {/* <div className="relative group mt-14">
           <div className="absolute top-2 lg:-top-8 left-1/2 transform -translate-x-1/2 w-[90%] mx-auto h-24 lg:h-80 bg-primary/50 rounded-full blur-3xl"></div>
           <Image
             width={1200}
@@ -70,7 +70,7 @@ export const HeroSection = () => {
           />
 
           <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
